@@ -22,12 +22,11 @@
     main { max-width: 1200px; margin: auto; padding: 20px; }
     section { margin-bottom: 40px; padding: 24px; background: var(--dark-gray); border-radius: 10px; }
     section h2 { margin-top: 0; color: var(--white); border-left: 4px solid var(--turquoise); padding-left: 12px; }
-    .video-box { position: relative; padding-top: 56.25%; background: #000; border: 2px solid var(--blue); border-radius: 10px; overflow: hidden; }
-    .video-box iframe, .video-box video { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
+    .video-box { position: relative; padding-top: 56.25%; background: #000; border: 2px solid var(--blue); border-radius: 10px; overflow: hidden; margin-bottom: 20px; }
+    .video-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
     .mental-health ul { padding-left: 20px; }
     .mental-health li { margin-bottom: 10px; }
     .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
-    .gallery video { width: 100%; height: 160px; object-fit: cover; border-radius: 8px; border: 1px solid var(--gray); }
     .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
     .card { background: linear-gradient(135deg, var(--gray), var(--dark-gray)); padding: 20px; border-radius: 10px; border: 1px solid var(--blue); }
     .card h3 { color: var(--turquoise); margin-top: 0; }
@@ -49,7 +48,7 @@
   <h2>The SoLuv Radio Show</h2>
   <p style="margin-bottom:12px; color:#1de9b6;">Catch us live every Thursday from 7–9 PM on <a href="https://www.hits923atlanta.com/" target="_blank" style="color:#00b4ff; text-decoration:none; font-weight:bold;">HITS 92.3 Atlanta</a>. Between shows, visit SOLUV Radio online for the latest community events, exclusive perks from our advertisers, and sponsor updates!</p>
   <div class="video-box">
-    <iframe src="https://youtu.be/y_HQH_TEzBE" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/videoseries?si=1h81fAI6YFAvB70S&list=PLQ9p6GARi5fAmcCuSHRfkvLFUuRFVThzS" title="SOLUV RADIO Playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 </section>
 
@@ -66,12 +65,18 @@
 <section>
   <h2>Station Video Gallery</h2>
   <div class="gallery">
-    <video controls>
-      <source src="https://youtu.be/y_HQH_TEzBE" type="video/mp4">
-    </video>
-    <video controls>
-      <source src="https://youtu.be/DCOBiXJP07Q" type="video/mp4">
-    </video>
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Show 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Show 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="Show 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" title="Show 4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
   </div>
 </section>
 
