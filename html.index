@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOLUV RADIO</title>
+  <style>
+    :root {
+      --black: #0b0b0b;
+      --dark-gray: #1a1a1a;
+      --gray: #2a2a2a;
+      --light-gray: #cfcfcf;
+      --white: #ffffff;
+      --blue: #00b4ff;
+      --turquoise: #1de9b6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--black);
+      color: var(--light-gray);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--dark-gray), var(--black));
+      padding: 20px;
+      border-bottom: 2px solid var(--blue);
+    }
+
+    header h1 {
+      margin: 0;
+      color: var(--white);
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      color: var(--turquoise);
+      font-size: 0.95rem;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background: var(--dark-gray);
+      border-radius: 8px;
+    }
+
+    section h2 {
+      margin-top: 0;
+      color: var(--white);
+      border-left: 4px solid var(--turquoise);
+      padding-left: 10px;
+    }
+
+    /* Video Stream */
+    .video-box {
+      position: relative;
+      padding-top: 56.25%;
+      background: #000;
+      border: 2px solid var(--blue);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .video-box iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Mental Health */
+    .mental-health ul {
+      padding-left: 20px;
+    }
+
+    .mental-health li {
+      margin-bottom: 10px;
+    }
+
+    /* Playlist */
+    .playlist iframe {
+      width: 100%;
+      height: 380px;
+      border-radius: 6px;
+      border: none;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid var(--gray);
+    }
+
+    /* Sponsors */
+    .sponsors {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .sponsor {
+      background: var(--gray);
+      padding: 20px;
+      border-radius: 6px;
+      color: var(--white);
+      font-weight: bold;
+    }
+
+    /* Competitive Features */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .feature-card {
+      background: linear-gradient(135deg, var(--gray), var(--dark-gray));
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid var(--blue);
+    }
+
+    .feature-card h3 {
+      margin-top: 0;
+      color: var(--turquoise);
+    }
+
+    footer {
+      background: var(--black);
+      padding: 20px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #888;
+      border-top: 1px solid var(--gray);
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Urban Pulse Radio</h1>
+  <p>Live. Independent. Community‑Driven.</p>
+</header>
+
+<main>
+
+  <!-- Live Stream -->
+  <section>
+    <h2>Live Stream</h2>
+    <div class="video-box">
+      <!-- Replace with YouTube Live, Twitch, Vimeo, or OBS stream embed -->
+      <iframe src="https://www.youtube.com/embed/live_stream?channel=CHANNEL_ID"></iframe>
+    </div>
+  </section>
+
+  <!-- Mental Health -->
+  <section class="mental-health">
+    <h2>Mental Health & Wellness</h2>
+    <p>Urban Pulse Radio is committed to protecting mental health in music, media, and creative spaces.</p>
+    <ul>
+      <li>Take breaks from social media and overstimulation.</li>
+      <li>Stay hydrated and maintain consistent sleep routines.</li>
+      <li>Reach out to trusted people when stress becomes overwhelming.</li>
+      <li>Use music intentionally to regulate mood and focus.</li>
+    </ul>
+  </section>
+
+  <!-- Playlist -->
+  <section class="playlist">
+    <h2>Featured Playlist</h2>
+    <!-- Replace with Spotify, Apple Music, or SoundCloud embed -->
+    <iframe src="https://open.spotify.com/embed/playlist/PLAYLIST_ID"></iframe>
+  </section>
+
+  <!-- Gallery -->
+  <section>
+    <h2>Station Gallery</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x300" alt="Studio" />
+      <img src="https://via.placeholder.com/400x300" alt="Live DJ" />
+      <img src="https://via.placeholder.com/400x300" alt="Guest Artist" />
+      <img src="https://via.placeholder.com/400x300" alt="Event Night" />
+    </div>
+  </section>
+
+  <!-- Sponsors -->
+  <section>
+    <h2>Ads & Sponsors</h2>
+    <div class="sponsors">
+      <div class="sponsor">Your Brand Here</div>
+      <div class="sponsor">Sponsor Slot</div>
+      <div class="sponsor">Advertise With Us</div>
+      <div class="sponsor">Local Business</div>
+    </div>
+  </section>
+
+  <!-- Competitive Edge -->
+  <section>
+    <h2>Why Urban Pulse Radio</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>Live Community Chat</h3>
+        <p>Real‑time interaction with DJs, hosts, and listeners during broadcasts.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Artist Spotlight</h3>
+        <p>Weekly features highlighting independent and emerging artists.</p>
+      </div>
+      <div class="feature-card">
+        <h3>On‑Demand Shows</h3>
+        <p>Replay interviews, mixes, and specialty programs anytime.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Community Resources</h3>
+        <p>Access mental health, creative grants, and local opportunity listings.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 SOLUV RADIO · Built for community </p>
+</footer>
+
+</body>
+</html>
