@@ -49,7 +49,7 @@
   <h2>The SoLuv Radio Show</h2>
   <p style="margin-bottom:12px; color:#1de9b6;">Catch us live every Thursday from 7–9 PM on <a href="https://www.hits923atlanta.com/" target="_blank" style="color:#00b4ff; text-decoration:none; font-weight:bold;">HITS 92.3 Atlanta</a>. Between shows, visit SOLUV Radio online for the latest community events, exclusive perks from our advertisers, and sponsor updates!</p>
   <div class="video-box">
-    <iframe src="https://www.hits923atlanta.com/" allowfullscreen></iframe>
+    <iframe src="https://youtu.be/y_HQH_TEzBE" allowfullscreen></iframe>
   </div>
 </section>
 
@@ -67,12 +67,10 @@
   <h2>Station Video Gallery</h2>
   <div class="gallery">
     <video controls>
-      <source src="https://drive.google.com/uc?export=download&id=1M4Jin6UaOVumke4pY5C-9XVhkYqdaohj" type="video/mp4">
-      Your browser does not support the video tag.
+      <source src="https://youtu.be/y_HQH_TEzBE" type="video/mp4">
     </video>
     <video controls>
-      <source src="https://drive.google.com/uc?export=download&id=1C5AC-xgiqTxfib7UQ7W0SY2oAA-0zaYL" type="video/mp4">
-      Your browser does not support the video tag.
+      <source src="https://youtu.be/DCOBiXJP07Q" type="video/mp4">
     </video>
   </div>
 </section>
@@ -117,9 +115,9 @@
   <h2>Ads & Sponsors</h2>
   <p style="font-size:0.9rem; color:#9be7d8;">Support the station · Partner with purpose</p>
   <div class="grid-3">
-    <div class="card"> Sponsored by Wellness Brands</div>
-    <div class="card"> Your Brand on SOLUV Radio</div>
-    <div class="card"> Community Partner Slot</div>
+    <div class="card">🎧 Sponsored by Wellness Brands</div>
+    <div class="card">📻 Your Brand on SOLUV Radio</div>
+    <div class="card">🤝 Community Partner Slot</div>
   </div>
 </section>
 
@@ -136,196 +134,6 @@
 
 <footer>
   <p>© 2026 SOLUV RADIO · Healing Through Sound </p>
-</footer>
-
-</body>
-</html>
-
-    /* Video Stream */
-    .video-box {
-      position: relative;
-      padding-top: 56.25%;
-      background: #000;
-      border: 2px solid var(--blue);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .video-box iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-
-    /* Mental Health */
-    .mental-health ul {
-      padding-left: 20px;
-    }
-
-    .mental-health li {
-      margin-bottom: 10px;
-    }
-
-    /* Playlist */
-    .playlist iframe {
-      width: 100%;
-      height: 380px;
-      border-radius: 6px;
-      border: none;
-    }
-
-    /* Gallery */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 15px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 6px;
-      border: 1px solid var(--gray);
-    }
-
-    /* Sponsors */
-    .sponsors {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 20px;
-      align-items: center;
-      text-align: center;
-    }
-
-    .sponsor {
-      background: var(--gray);
-      padding: 20px;
-      border-radius: 6px;
-      color: var(--white);
-      font-weight: bold;
-    }
-
-    /* Competitive Features */
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .feature-card {
-      background: linear-gradient(135deg, var(--gray), var(--dark-gray));
-      padding: 20px;
-      border-radius: 8px;
-      border: 1px solid var(--blue);
-    }
-
-    .feature-card h3 {
-      margin-top: 0;
-      color: var(--turquoise);
-    }
-
-    footer {
-      background: var(--black);
-      padding: 20px;
-      text-align: center;
-      font-size: 0.85rem;
-      color: #888;
-      border-top: 1px solid var(--gray);
-    }
-
-    a { color: var(--blue); text-decoration: none; }
-  </style>
-</head>
-<body>
-
-<header>
-  <h1>Urban Pulse Radio</h1>
-  <p>Live. Independent. Community‑Driven.</p>
-</header>
-
-<main>
-
-  <!-- Live Stream -->
-  <section>
-    <h2>Live Stream</h2>
-    <div class="video-box">
-      <!-- Replace with YouTube Live, Twitch, Vimeo, or OBS stream embed -->
-      <iframe src="https://www.youtube.com/embed/live_stream?channel=CHANNEL_ID"></iframe>
-    </div>
-  </section>
-
-  <!-- Mental Health -->
-  <section class="mental-health">
-    <h2>Mental Health & Wellness</h2>
-    <p>Urban Pulse Radio is committed to protecting mental health in music, media, and creative spaces.</p>
-    <ul>
-      <li>Take breaks from social media and overstimulation.</li>
-      <li>Stay hydrated and maintain consistent sleep routines.</li>
-      <li>Reach out to trusted people when stress becomes overwhelming.</li>
-      <li>Use music intentionally to regulate mood and focus.</li>
-    </ul>
-  </section>
-
-  <!-- Playlist -->
-  <section class="playlist">
-    <h2>Featured Playlist</h2>
-    <!-- Replace with Spotify, Apple Music, or SoundCloud embed -->
-    <iframe src="https://open.spotify.com/embed/playlist/PLAYLIST_ID"></iframe>
-  </section>
-
-  <!-- Gallery -->
-  <section>
-    <h2>Station Gallery</h2>
-    <div class="gallery">
-      <img src="https://via.placeholder.com/400x300" alt="Studio" />
-      <img src="https://via.placeholder.com/400x300" alt="Live DJ" />
-      <img src="https://via.placeholder.com/400x300" alt="Guest Artist" />
-      <img src="https://via.placeholder.com/400x300" alt="Event Night" />
-    </div>
-  </section>
-
-  <!-- Sponsors -->
-  <section>
-    <h2>Ads & Sponsors</h2>
-    <div class="sponsors">
-      <div class="sponsor">Your Brand Here</div>
-      <div class="sponsor">Sponsor Slot</div>
-      <div class="sponsor">Advertise With Us</div>
-      <div class="sponsor">Local Business</div>
-    </div>
-  </section>
-
-  <!-- Competitive Edge -->
-  <section>
-    <h2>Why Urban Pulse Radio</h2>
-    <div class="features">
-      <div class="feature-card">
-        <h3>Live Community Chat</h3>
-        <p>Real‑time interaction with DJs, hosts, and listeners during broadcasts.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Artist Spotlight</h3>
-        <p>Weekly features highlighting independent and emerging artists.</p>
-      </div>
-      <div class="feature-card">
-        <h3>On‑Demand Shows</h3>
-        <p>Replay interviews, mixes, and specialty programs anytime.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Community Resources</h3>
-        <p>Access mental health, creative grants, and local opportunity listings.</p>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <p>© 2026 SOLUV RADIO · Built for community </p>
 </footer>
 
 </body>
