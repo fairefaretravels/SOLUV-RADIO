@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SOLUV RADIO</title>
+
   <style>
     :root {
       --black: #0b0b0b;
@@ -29,6 +30,7 @@
       background: linear-gradient(135deg, var(--dark-gray), var(--black));
       padding: 24px;
       border-bottom: 2px solid var(--blue);
+      text-align: center;
     }
 
     header h1 {
@@ -41,6 +43,12 @@
       margin: 6px 0 0;
       color: var(--turquoise);
       font-size: 0.95rem;
+    }
+
+    header a {
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: bold;
     }
 
     main {
@@ -88,9 +96,6 @@
       text-align: center;
     }
 
-    .mental-health ul { padding-left: 20px; }
-    .mental-health li { margin-bottom: 10px; }
-
     .playlist iframe {
       width: 100%;
       height: 380px;
@@ -100,16 +105,8 @@
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 15px;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 8px;
-      border: 1px solid var(--gray);
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
     }
 
     .grid-3 {
@@ -125,7 +122,10 @@
       border: 1px solid var(--blue);
     }
 
-    .card h3 { color: var(--turquoise); margin-top: 0; }
+    .card h3 {
+      color: var(--turquoise);
+      margin-top: 0;
+    }
 
     form input, form textarea, form button {
       width: 100%;
@@ -154,29 +154,55 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>SOLUV RADIO</h1>
   <p>Healing Frequencies · Independent Voices · Community Power</p>
+  <p>
+    Partner Station:
+    <a href="https://hits923atlanta.com" target="_blank">
+      HITS 92.3 Atlanta
+    </a>
+  </p>
 </header>
 
 <main>
 
+<!-- LIVE BROADCAST -->
 <section>
   <h2>Live Broadcast</h2>
+
   <div class="video-box">
     <iframe src="https://www.youtube.com/embed/live_stream?channel=CHANNEL_ID"></iframe>
   </div>
+
   <div class="audio-player">
     <p><strong>Audio Stream</strong></p>
     <audio controls src="YOUR_ICECAST_OR_STREAM_URL"></audio>
   </div>
 </section>
 
-<section class="mental-health">
+<!-- MUSIC HUB -->
+<section>
+  <h2>Music Hub</h2>
+
+  <div class="audio-player">
+    <iframe
+      width="100%"
+      height="150"
+      src="https://www.iradeo.com/station/player/174583?compact=true"
+      frameborder="0"
+      scrolling="no"
+      allow="autoplay">
+    </iframe>
+  </div>
+</section>
+
+<!-- MENTAL HEALTH -->
+<section>
   <h2>Mental Health & Wellness</h2>
-  <p>SOLUV Radio exists to protect the mind, spirit, and creativity of our listeners.</p>
   <ul>
     <li>Pause when your body tells you to.</li>
     <li>Curate your sound environment intentionally.</li>
@@ -185,73 +211,54 @@
   </ul>
 </section>
 
+<!-- PLAYLIST -->
 <section class="playlist">
   <h2>Featured Playlist</h2>
   <iframe src="https://open.spotify.com/embed/playlist/PLAYLIST_ID"></iframe>
 </section>
 
+<!-- STATION GALLERY -->
 <section>
   <h2>Station Gallery</h2>
+
   <div class="gallery">
-    <img src="<iframe width="560" height="315" src="https://www.youtube.com/embed/rSU2jL4rgxU?si=awd80UXoeezeetcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" />
-    <img src="<iframe width="560" height="315" src="https://www.youtube.com/embed/aRp37q-5Mb0?si=g5CLpm_V3qYHjsaW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" />
-    <img src="<iframe width="560" height="315" src="https://www.youtube.com/embed/H1uNbv5dUi4?si=9JKwBI3wWuomFkAu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" />
-    <img src="<iframe width="560" height="315" src="https://www.youtube.com/embed/RZIjOmHndyE?si=CeICYMfp4ssINmnL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" />
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/rSU2jL4rgxU" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/aRp37q-5Mb0" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/H1uNbv5dUi4" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/RZIjOmHndyE" allowfullscreen></iframe>
+    </div>
   </div>
 </section>
 
-<section>
-  <h2>Live Community Chat</h2>
-  <div class="card">
-    <p>Embed Discord, VDO.Ninja, or Chatango here for real-time listener interaction.</p>
-  </div>
-</section>
-
+<!-- DJ SHOWS -->
 <section>
   <h2>DJ Schedule & Shows</h2>
   <div class="grid-3">
-    <div class="card"><h3>Morning Soluv</h3><p>Daily · Healing + Motivation</p></div>
-    <div class="card"><h3>Artist After Dark</h3><p>Interviews & premieres</p></div>
-    <div class="card"><h3>Night Frequency</h3><p>Late night sonic therapy</p></div>
+    <div class="card"><h3>Morning Soluv</h3><p>Healing + Motivation</p></div>
+    <div class="card"><h3>Artist After Dark</h3><p>Interviews & Premieres</p></div>
+    <div class="card"><h3>Night Frequency</h3><p>Late-night Sonic Therapy</p></div>
   </div>
 </section>
 
+<!-- REQUEST SONG -->
 <section>
   <h2>Request a Song</h2>
   <form>
-    <input type="text" placeholder="Your Name" />
-    <input type="text" placeholder="Song & Artist" />
+    <input type="text" placeholder="Your Name">
+    <input type="text" placeholder="Song & Artist">
     <textarea placeholder="Message"></textarea>
     <button>Send Request</button>
   </form>
-</section>
-
-<section>
-  <h2>Artist Submissions</h2>
-  <form>
-    <input type="text" placeholder="Artist Name" />
-    <input type="url" placeholder="Music Link" />
-    <textarea placeholder="Tell us about your work"></textarea>
-    <button>Submit Music</button>
-  </form>
-</section>
-
-<section>
-  <h2>Ads & Sponsors</h2>
-  <div class="grid-3">
-    <div class="card">Sponsor Slot</div>
-    <div class="card">Brand Partner</div>
-    <div class="card">Advertise With SOLUV</div>
-  </div>
-</section>
-
-<section>
-  <h2>Why SOLUV Radio</h2>
-  <div class="grid-3">
-    <div class="card"><h3>Mind‑First Media</h3><p>We prioritize wellness over algorithms.</p></div>
-    <div class="card"><h3>Independent Artists</h3><p>Real exposure without exploitation.</p></div>
-    <div class="card"><h3>Community Ownership</h3><p>This station grows with its listeners.</p></div>
-  </div>
 </section>
 
 </main>
@@ -262,4 +269,3 @@
 
 </body>
 </html>
-
