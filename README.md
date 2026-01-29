@@ -193,10 +193,10 @@
 <section>
   <h2>Station Gallery</h2>
   <div class="gallery">
-    <img src="https://via.placeholder.com/400x300" />
-    <img src="https://via.placeholder.com/400x300" />
-    <img src="https://via.placeholder.com/400x300" />
-    <img src="https://via.placeholder.com/400x300" />
+    <img src="<iframe width="560" height="315" src="https://www.youtube.com/embed/rSU2jL4rgxU?si=awd80UXoeezeetcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" />
+    <img src="<iframe width="560" height="315" src="https://www.youtube.com/embed/aRp37q-5Mb0?si=g5CLpm_V3qYHjsaW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" />
+    <img src="<iframe width="560" height="315" src="https://www.youtube.com/embed/H1uNbv5dUi4?si=9JKwBI3wWuomFkAu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" />
+    <img src="<iframe width="560" height="315" src="https://www.youtube.com/embed/RZIjOmHndyE?si=CeICYMfp4ssINmnL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" />
   </div>
 </section>
 
